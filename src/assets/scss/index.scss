@@ -1,0 +1,72 @@
+$gray: #9ca3af;
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0.5rem;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    @extend %flex-column;
+    justify-content: center;
+}
+
+.logo {
+    max-height: 150px;
+}
+
+.title {
+    font-size: 2.5rem;;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.pomodoro-app {
+    @extend %flex-column;
+    width: 90%;
+    margin: 0 auto;
+    background-color: $gray;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+.pomodoro-app__timer {
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.pomodoro-app__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.pomodoro-app__start {
+    background-color: #22c55e;
+}
+
+.pomodoro-app__pause {
+    background-color: #eab308;
+}
+
+.pomodoro-app__stop {
+    background-color: #ef4444;
+}
+
+@media (min-width: 768px) {
+    .pomodoro-app {
+        max-width: 28rem;
+    }
+}
